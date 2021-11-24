@@ -1,0 +1,13 @@
+Buscar <input [(ngModel)]="idEmployee" type="text">
+
+<button *ngIf="idEmployee"(click)=getEmployee()>Buscar</button>
+<button (click)="getEmployees()">Recargar</button>
+<table>
+    <tr *ngFor="let employee of employees" >
+        <td *ngIf="employee.email"> {{ employee.id }} </td>
+        <td> {{ employee.first_name }} </td>
+        <td> {{ employee.email }} </td>
+    </tr>
+</table>
+
+

@@ -1,0 +1,8 @@
+<hr>
+Nombre : <input [(ngModel)]="nombre" type="text" class="form-control" placeholder="Nombre">
+Apellido : <input [(ngModel)]="apellido" type="text" class="form-control" placeholder="Apellido">
+Email : <input  [(ngModel)]="email" type="text" class="form-control" placeholder="Email">
+Telefono : <input [(ngModel)]="telefono" type="text" class="form-control" placeholder="Telefono">
+
+{{ message }}
+<input (click)="newEmployee()" type="submit" value="Enviar">
